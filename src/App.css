@@ -38,6 +38,15 @@
   text-align: center;
   margin: 20px;
 }
+
+.card_total{
+  font-size: 31px;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
