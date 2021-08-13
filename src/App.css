@@ -47,6 +47,25 @@
   text-overflow: clip;;
 }
 
+.indicator {
+  font-size: 17px;
+}
+
+.blink {
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+  }
+
+  @keyframes blink-animation {
+        to {
+          visibility: hidden;
+        }
+      }
+      @-webkit-keyframes blink-animation {
+        to {
+          visibility: hidden;
+        }
+      }
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

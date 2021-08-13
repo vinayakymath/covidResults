@@ -16,7 +16,9 @@ const Covid = () => {
     }
 
     useEffect(() => {
-        getCovidData();
+        // getCovidData();
+        const id = setInterval(getCovidData, 1000);
+        return () => clearInterval(id);
     }, []);
 
     return (
@@ -24,7 +26,7 @@ const Covid = () => {
             <div className="container">
                 <section>
                     <div className="header">
-                        <h1>🔴 Live</h1>
+                        <h1 className="indicator blink">🔴 Live</h1>
                         <h2>COVID-19 CORONAVIRUS TRACKER</h2>
                     </div>
                     <div className="card-columns">
